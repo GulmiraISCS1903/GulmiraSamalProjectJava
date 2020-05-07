@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="700.0" style="-fx-background-color: DEB887;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.SignUpController">
+    <children>
+        <ImageView fitHeight="299.0" fitWidth="700.0" layoutY="100.0" opacity="0.74">
+            <image>
+                <Image url="@pictures/00004.jpg" />
+            </image>
+        </ImageView>
+        <AnchorPane layoutX="172.0" layoutY="103.0" prefHeight="293.0" prefWidth="357.0" style="-fx-background-color: FFFFFF; -fx-border-color: DEB887; -fx-border-width: 5; -fx-background-radius: 10;">
+            <children>
+                <TextField fx:id="signUpLogin_Field" layoutX="29.0" layoutY="155.0" prefHeight="28.0" prefWidth="298.0" promptText="telephone number" style="-fx-background-color: FFFFFF; -fx-border-color: silver; -fx-border-radius: 3;">
+                    <font>
+                        <Font name="Cooper Black" size="14.0" />
+                    </font>
+                </TextField>
+                <PasswordField fx:id="signUpPassword_Field" layoutX="29.0" layoutY="193.0" prefHeight="28.0" prefWidth="298.0" promptText="password" style="-fx-background-color: FFFFFF; -fx-border-color: silver; -fx-border-radius: 3;">
+                    <font>
+                        <Font name="Cooper Black" size="14.0" />
+                    </font>
+                </PasswordField>
+                <Label contentDisplay="CENTER" layoutX="82.0" layoutY="2.0" prefHeight="33.0" prefWidth="195.0" text="Registration" textAlignment="CENTER" textFill="BURLYWOOD" textOverrun="CLIP" underline="true">
+                    <font>
+                        <Font name="Cooper Black" size="30.0" />
+                    </font>
+                </Label>
+            <TextField fx:id="signUpLocation_Field" layoutX="29.0" layoutY="119.0" prefHeight="28.0" prefWidth="298.0" promptText="location" style="-fx-background-color: FFFFFF; -fx-border-color: silver; -fx-border-radius: 3;">
+               <font>
+                  <Font name="Cooper Black" size="14.0" />
+               </font>
+            </TextField>
+            <TextField fx:id="signUpLastName_Field" layoutX="29.0" layoutY="79.0" prefHeight="28.0" prefWidth="298.0" promptText="last name" style="-fx-background-color: FFFFFF; -fx-border-color: silver; -fx-border-radius: 3;">
+               <font>
+                  <Font name="Cooper Black" size="14.0" />
+               </font>
+            </TextField>
+            <TextField fx:id="signUpFirstName_Field" layoutX="29.0" layoutY="43.0" prefHeight="28.0" prefWidth="298.0" promptText="first name" style="-fx-background-color: FFFFFF; -fx-border-color: silver; -fx-border-radius: 3;">
+               <font>
+                  <Font name="Cooper Black" size="14.0" />
+               </font>
+            </TextField>
+            <CheckBox fx:id="signUpCheckBoxMale" layoutX="46.0" layoutY="230.0" mnemonicParsing="false" text="male" textFill="#7c7a7a">
+               <font>
+                  <Font name="Cooper Black" size="14.0" />
+               </font>
+            </CheckBox>
+            <CheckBox fx:id="signUpCheckBoxFemale" layoutX="241.0" layoutY="230.0" mnemonicParsing="false" text="female" textFill="#7c7a7a">
+               <font>
+                  <Font name="Cooper Black" size="14.0" />
+               </font>
+            </CheckBox>
+            <Button fx:id="signUpAuthSignInButton" layoutX="127.0" layoutY="251.0" mnemonicParsing="false" prefHeight="20.0" prefWidth="103.0" style="-fx-background-color: DEB887;" text="sign in" textAlignment="CENTER" textFill="WHITE">
+               <font>
+                  <Font name="Cooper Black" size="18.0" />
+               </font>
+            </Button>
+            </children>
+        </AnchorPane>
+        <Label layoutX="90.0" layoutY="20.0" prefHeight="63.0" prefWidth="522.0" text="Online Fruits &amp; Vegetables" textAlignment="CENTER" textFill="WHITE" underline="true">
+            <font>
+                <Font name="Cooper Black" size="38.0" />
+            </font>
+        </Label>
+    </children>
+</AnchorPane>

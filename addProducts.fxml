@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.MenuButton?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="555.0" prefWidth="700.0" style="-fx-background-color: DEB887;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.AddProducts">
+    <children>
+        <AnchorPane layoutY="48.0" prefHeight="507.0" prefWidth="700.0" style="-fx-background-color: FFFFFF;">
+            <children>
+                <Button fx:id="clearButton" layoutX="402.0" layoutY="391.0" mnemonicParsing="false" onAction="#clear" prefHeight="35.0" prefWidth="138.0" style="-fx-background-color: DEB887;" text="Clear" />
+                <Button fx:id="AddNewProduct" layoutX="167.0" layoutY="390.0" mnemonicParsing="false" onAction="#add" prefHeight="35.0" prefWidth="138.0" style="-fx-background-color: DEB887;" text="Add" />
+                <AnchorPane layoutX="127.0" layoutY="44.0" prefHeight="327.0" prefWidth="446.0" style="-fx-background-color: FFFFFF; -fx-border-color: DEB887; -fx-border-width: 5; -fx-background-radius: 10;">
+                    <children>
+                        <TextField fx:id="pname_Field" layoutX="29.0" layoutY="73.0" prefHeight="35.0" prefWidth="389.0" promptText="the product's name" style="-fx-background-color: FFFFFF; -fx-border-color: silver; -fx-border-radius: 3;">
+                            <font>
+                                <Font name="Cooper Black" size="14.0" />
+                            </font>
+                        </TextField>
+                        <Label contentDisplay="CENTER" layoutX="116.0" layoutY="21.0" prefHeight="35.0" prefWidth="214.0" text="Add Products" textAlignment="CENTER" textFill="BURLYWOOD" textOverrun="CLIP" underline="true">
+                            <font>
+                                <Font name="Cooper Black" size="30.0" />
+                            </font>
+                        </Label>
+                        <TextField fx:id="pprice_Field1" layoutX="29.0" layoutY="213.0" prefHeight="35.0" prefWidth="389.0" promptText="price is 1 kg" style="-fx-background-color: FFFFFF; -fx-border-color: silver; -fx-border-radius: 3;">
+                            <font>
+                                <Font name="Cooper Black" size="14.0" />
+                            </font>
+                        </TextField>
+                        <TextField fx:id="pdate_Field2" layoutX="29.0" layoutY="164.0" prefHeight="35.0" prefWidth="389.0" promptText="date added" style="-fx-background-color: FFFFFF; -fx-border-color: silver; -fx-border-radius: 3;">
+                            <font>
+                                <Font name="Cooper Black" size="14.0" />
+                            </font>
+                        </TextField>
+                        <TextField fx:id="pquality_Field3" layoutX="29.0" layoutY="118.0" prefHeight="35.0" prefWidth="389.0" promptText="product quality" style="-fx-background-color: FFFFFF; -fx-border-color: silver; -fx-border-radius: 3;">
+                            <font>
+                                <Font name="Cooper Black" size="14.0" />
+                            </font>
+                        </TextField>
+                        <TextField fx:id="pweight_Field4" layoutX="29.0" layoutY="262.0" prefHeight="35.0" prefWidth="389.0" promptText="added weight" style="-fx-background-color: FFFFFF; -fx-border-color: silver; -fx-border-radius: 3;">
+                            <font>
+                                <Font name="Cooper Black" size="14.0" />
+                            </font>
+                        </TextField>
+                    </children>
+                </AnchorPane>
+            </children>
+        </AnchorPane>
+        <ImageView fitHeight="39.0" fitWidth="43.0" layoutX="654.0" layoutY="5.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@pictures/111.jpg" />
+            </image>
+        </ImageView>
+        <MenuButton fx:id="menu" layoutX="548.0" layoutY="12.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="88.0" text="Profile">
+            <items>
+                <MenuItem fx:id="my_profile" mnemonicParsing="false" text="My profile" />
+                <MenuItem fx:id="settings" mnemonicParsing="false" text="Settings" />
+                <MenuItem fx:id="korzina" mnemonicParsing="false" text="Shopping basket" />
+                <MenuItem fx:id="sign_out_profile" mnemonicParsing="false" onAction="#sign_out_menu" text="Sign out" />
+            </items>
+        </MenuButton>
+    </children>
+
+</AnchorPane>
